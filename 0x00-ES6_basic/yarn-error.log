@@ -1,0 +1,53 @@
+Arguments: 
+  /home/emmanuel/.nvm/versions/node/v12.11.1/bin/node /mnt/c/Program Files (x86)/Yarn/bin/yarn.js install
+
+PATH: 
+  /home/emmanuel/.nvm/versions/node/v12.11.1/bin:/home/emmanuel/.rbenv/shims:/home/emmanuel/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Users/HP/bin:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/local/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/Users/HP/bin:/mnt/c/Program Files (x86)/Java/jre1.8.0_351:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Windows/system32/config/systemprofile/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/GitHub, Inc:/mnt/c/Users/HP/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/GitHub, Inc:/mnt/c/Users/HP/AppData/Local/atom:/mnt/c/Program Files/MongoDB/Server/4.0/bin:/mnt/c/Program Files (x86)/Yarn/bin:/mnt/c/Program Files/nodejs:/mnt/c/Users/HP/AppData/Local/Programs/Python/Python311:/mnt/c/Users/HP/AppData/Local/Programs/Python/Python311/Scripts:/mnt/c/Users/HP/Desktop/ORCA SOFTWARES:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/PuTTY:/mnt/c/Program Files/MySQL/MySQL Utilities 1.6:/mnt/c/Users/HP/AppData/Local/Programs/Python/Python311/Scripts:/mnt/c/Users/HP/AppData/Local/Programs/Python/Python311:/mnt/c/Program Files/Java/jre1.8.0_351/bin:/mnt/c/Program Files/JetBrains/WebStorm 2023.1/bin:/mnt/c/Users/HP/AppData/Local/hyper/app-3.0.2/resources/bin:/mnt/c/Users/HP/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/Users/HP/AppData/Local/Programs/Python/Python39:/mnt/c/Program Files/JetBrains/CLion 2023.1.4/bin:/mnt/c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin:/mnt/c/Users/HP/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Git/usr/bin/vendor_perl:/mnt/c/Program Files/Git/usr/bin/core_perl:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  12.11.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:141517:19)
+      at Object.onceWrapper (events.js:299:28)
+      at ClientRequest.emit (events.js:210:5)
+      at TLSSocket.emitRequestTimeout (_http_client.js:690:9)
+      at Object.onceWrapper (events.js:299:28)
+      at TLSSocket.emit (events.js:210:5)
+      at TLSSocket.Socket._onTimeout (net.js:468:8)
+      at listOnTimeout (internal/timers.js:531:17)
+      at processTimers (internal/timers.js:475:7)
+
+npm manifest: 
+  {
+    "scripts": {
+      "lint": "./node_modules/.bin/eslint",
+      "check-lint": "lint [0-9]*.js",
+      "dev": "npx babel-node",
+      "test": "jest",
+      "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.6.0",
+      "@babel/node": "^7.8.0",
+      "@babel/preset-env": "^7.6.0",
+      "eslint": "^6.4.0",
+      "eslint-config-airbnb-base": "^14.0.0",
+      "eslint-plugin-import": "^2.18.2",
+      "eslint-plugin-jest": "^22.17.0",
+      "jest": "^24.9.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

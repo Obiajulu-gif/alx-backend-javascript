@@ -4,7 +4,7 @@ process.stdin.on('data', (data) => {
   const inputName = data.toString().trim();
   console.log(`Your name is: ${inputName}`);
 
-  console.log('This important software is now closing');
+  console.log('This important software is now closing\n');
 
   process.exit();
 });

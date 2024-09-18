@@ -27,12 +27,12 @@ function countStudents(path) {
 
       console.log(`Number of students: ${students.length}`);
       console.log(
-        `Number of students in CS : ${
+        `Number of students in CS: ${
           csStudents.length
         }. List: ${csStudents.join(', ')}`,
       );
       console.log(
-        `Number of students in CS : ${
+        `Number of students in SWE: ${
           csStudents.length
         }. List: ${sweStudents.join(', ')}`,
       );

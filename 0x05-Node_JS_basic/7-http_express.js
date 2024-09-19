@@ -14,17 +14,17 @@ app.get('/students', async (req, res) => {
   try {
     const data = await countStudents(process.argv[2]);
     res.write(`Number of students: ${data.total}\n`);
-    for (const [field, students] of Object.entries(data.field)) {
+    for (const [field, students] of Object.entries(data.fields)) {
       res.write(
         `Number of students in ${field}: ${
           students.length
         }. List: ${students.join(', ')}\n`,
       );
     }
+    res.end();
   } catch (error) {
     res.end(error.message);
   }
-  res.end();
 });
 
 app.listen(port, () => {

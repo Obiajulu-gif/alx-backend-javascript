@@ -24,10 +24,9 @@ app.get("/students", async (req, res) => {
 				}. List: ${students.join(", ")}\n`
 			);
 		}
-	} catch (error) {
-		res.write(error.message);
-	} finally {
 		res.end();
+	} catch (error) {
+		res.end(error.message);
 	}
 });
 

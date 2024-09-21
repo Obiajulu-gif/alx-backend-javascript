@@ -9,11 +9,13 @@ app.listen(PORT, () => {
 	console.log(`API available on localhost port ${PORT}`);
 });
 
+// Existing endpoint
 app.get("/", (req, res) => {
 	res.send("Welcome to the payment system");
 });
 
-app.get("/available_payment", (req, res) => {
+// New endpoint for available payments
+app.get("/available_payments", (req, res) => {
 	res.json({
 		payment_methods: {
 			credit_cards: true,
@@ -22,13 +24,16 @@ app.get("/available_payment", (req, res) => {
 	});
 });
 
+// New endpoint for login
 app.post("/login", (req, res) => {
-	const username = req.body.username;
+	const username = req.body.userName;
 	res.send(`Welcome ${username}`);
 });
 
+// New endpoint for cart
 app.get("/cart/:id", (req, res) => {
 	const id = req.params.id;
+
 	// Validate that id is a number
 	if (!/^\d+$/.test(id)) {
 		return res.status(404).send("Not Found");

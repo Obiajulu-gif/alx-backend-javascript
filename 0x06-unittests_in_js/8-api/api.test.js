@@ -33,3 +33,21 @@ describe("Index page", () => {
 		});
 	});
 });
+
+describe("Cart page", () => {
+	const baseUrl = "http://localhost:7865/cart";
+	it("should return the correct status code when :id is a number", (done) => {
+		request.get(`${baseUrl}/12`, (error, response) => {
+			expect(response.statusCode).to.equal(200);
+			expect(response.body).to.equal("Payment methods for cart 12");
+			done();
+		});
+	});
+
+	it("should return 404 status code when :id is not a number", (done) => {
+		request.get(`${baseUrl}/hello`, (error, response) => {
+			expect(response.statusCode).to.equal(404);
+			done();
+		});
+	});
+});
